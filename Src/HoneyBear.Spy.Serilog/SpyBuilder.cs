@@ -53,7 +53,7 @@ namespace HoneyBear.Spy.Serilog
         }
 
         ISpyBuilder ISpyLogLevel.OverriddenFromAppSetting() =>
-            WithLogLevel.Value(ConfigurationManager.AppSettings["LogLevel"]);
+            WithLogLevel.Value(ConfigurationManager.AppSettings["HoneyBear.Spy.LogLevel"]);
 
         ISpyBuilder ISpyLogLevel.ByEnvironment(string environment)
         {
@@ -80,7 +80,7 @@ namespace HoneyBear.Spy.Serilog
         }
 
         ISpyBuilder ISpyLogLevel.ByEnvironmentFromAppSetting() =>
-            WithLogLevel.ByEnvironment(ConfigurationManager.AppSettings["Environment"]);
+            WithLogLevel.ByEnvironment(ConfigurationManager.AppSettings["HoneyBear.Spy.Environment"]);
 
         ISpyBuilder ISpyFileLocation.Value(string path)
         {
@@ -90,13 +90,13 @@ namespace HoneyBear.Spy.Serilog
         }
 
         ISpyBuilder ISpyFileLocation.OverriddenFromAppSetting() =>
-            WithFileLocation.Value(ConfigurationManager.AppSettings["LogFilePath"]);
+            WithFileLocation.Value(ConfigurationManager.AppSettings["HoneyBear.Spy.LogFilePath"]);
 
         ISpyBuilder ISpyFileLocation.OverriddenFromEnvironmentVariable(string name) =>
             WithFileLocation.Value(System.Environment.GetEnvironmentVariable(name));
 
         ISpyBuilder ISpyFileLocation.OverriddenFromEnvironmentVariable() =>
-            WithFileLocation.OverriddenFromEnvironmentVariable("LogDir");
+            WithFileLocation.OverriddenFromEnvironmentVariable("HoneyBear.Spy.LogDir");
 
         public ISpyBuilder AppendProductName(string name)
         {
@@ -106,7 +106,7 @@ namespace HoneyBear.Spy.Serilog
         }
 
         public ISpyBuilder AppendProductNameFromAppSetting() =>
-            AppendProductName(ConfigurationManager.AppSettings["ProductName"]);
+            AppendProductName(ConfigurationManager.AppSettings["HoneyBear.Spy.ProductName"]);
 
         ISpyBuilder ISpyFileName.Value(string name)
         {
@@ -116,7 +116,7 @@ namespace HoneyBear.Spy.Serilog
         }
 
         ISpyBuilder ISpyFileName.OverriddenFromAppSetting() =>
-            WithFileName.Value(ConfigurationManager.AppSettings["LogFileName"]);
+            WithFileName.Value(ConfigurationManager.AppSettings["HoneyBear.Spy.LogFileName"]);
 
         public ISpy Create()
         {
@@ -131,9 +131,12 @@ namespace HoneyBear.Spy.Serilog
 
             if (string.IsNullOrEmpty(_fileName))
             {
-                var assembly = Assembly.GetEntryAssembly();
-                var assemblyName = assembly.GetName().Name;
-                _fileName = string.Concat(assemblyName, "-{Date}.log");
+                string appName;
+                if (AssemblyNameIsAvailable)
+                    appName = Assembly.GetEntryAssembly().GetName().Name;
+                else if (!TryReadApplicationNameFromAppSettings(out appName))
+                    throw new ApplicationNameNotSpecified();
+                _fileName = string.Concat(appName, "-{Date}.log");
             }
 
             var fullFilePath = $"{_filePath}\\{_fileName}";
@@ -152,5 +155,13 @@ namespace HoneyBear.Spy.Serilog
 
             return new Spy(_configuration.CreateLogger());
         }
+
+        private static bool TryReadApplicationNameFromAppSettings(out string appName)
+        {
+            appName = ConfigurationManager.AppSettings["HoneyBear.Spy.ApplicationName"];
+            return appName != null;
+        }
+
+        private static bool AssemblyNameIsAvailable => Assembly.GetEntryAssembly() != null;
     }
 }

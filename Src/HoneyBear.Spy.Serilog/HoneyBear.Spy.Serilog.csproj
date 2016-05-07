@@ -44,6 +44,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\ApplicationNameNotSpecified.cs" />
     <Compile Include="Configuration\DefaultLogLevelDecider.cs" />
     <Compile Include="Configuration\ISpyLogLevelDecider.cs" />
     <Compile Include="Enrichers\ClassAndMethodEnricher.cs" />
