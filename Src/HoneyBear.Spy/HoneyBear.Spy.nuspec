@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>HoneyBear.Spy</id>
+        <version>$version$</version>
+        <title>HoneyBear.Spy</title>
+        <authors>Eoin O'Connor</authors>
+        <owners>Eoin O'Connor</owners>
+        <licenseUrl>https://github.com/eoin55/HoneyBear.Spy/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/eoin55/HoneyBear.Spy</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A pluggable .NET logging library.</description>
+        <copyright>Copyright © Eoin O'Connor 2016</copyright>
+        <tags>Logging</tags>
+    </metadata>
+    <files>
+        <file src="bin\Release\HoneyBear.Spy.dll" target="lib\net452\HoneyBear.Spy.dll" />
+        <file src="bin\Release\HoneyBear.Spy.xml" target="lib\net452\HoneyBear.Spy.xml" />
+    </files>
+</package>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>HoneyBear.Spy.Serilog.Autofac</id>
+        <version>$version$</version>
+        <title>HoneyBear.Spy.Serilog.Autofac</title>
+        <authors>Eoin O'Connor</authors>
+        <owners>Eoin O'Connor</owners>
+        <licenseUrl>https://github.com/eoin55/HoneyBear.Spy/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/eoin55/HoneyBear.Spy</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Provides Autofac registration for the Serilog plugin for the HoneyBear.Spy logging library.</description>
+        <copyright>Copyright © Eoin O'Connor 2016</copyright>
+        <tags>Logging Serilog</tags>
+        <dependencies>
+            <dependency id="HoneyBear.Spy" version="$version$" />
+            <dependency id="HoneyBear.Spy.Serilog" version="$version$" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\HoneyBear.Spy.Serilog.Autofac.dll" target="lib\net452\HoneyBear.Spy.Serilog.Autofac.dll" />
+        <file src="bin\Release\HoneyBear.Spy.Serilog.Autofac.xml" target="lib\net452\HoneyBear.Spy.Serilog.Autofac.xml" />
+    </files>
+</package>
