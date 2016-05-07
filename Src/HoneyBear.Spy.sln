@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy", "HoneyBear.Spy\HoneyBear.Spy.csproj", "{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Serilog", "HoneyBear.Spy.Serilog\HoneyBear.Spy.Serilog.csproj", "{401B7375-CA98-41C5-8665-F3582AD35239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Serilog.Autofac", "HoneyBear.Spy.Serilog.Autofac\HoneyBear.Spy.Serilog.Autofac.csproj", "{18306AA8-4296-499A-A3AF-D25663F8F740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{E38DF084-32DA-43CE-A1B0-707ADE6AE008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Sample.Library", "HoneyBear.Spy.Sample.Library\HoneyBear.Spy.Sample.Library.csproj", "{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Sample.Host.WindowsService", "HoneyBear.Spy.Sample.Host.WindowsService\HoneyBear.Spy.Sample.Host.WindowsService.csproj", "{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401B7375-CA98-41C5-8665-F3582AD35239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401B7375-CA98-41C5-8665-F3582AD35239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401B7375-CA98-41C5-8665-F3582AD35239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401B7375-CA98-41C5-8665-F3582AD35239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18306AA8-4296-499A-A3AF-D25663F8F740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18306AA8-4296-499A-A3AF-D25663F8F740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18306AA8-4296-499A-A3AF-D25663F8F740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18306AA8-4296-499A-A3AF-D25663F8F740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F1DFE5C-E983-40C0-B820-91BF40F8ABF7} = {E38DF084-32DA-43CE-A1B0-707ADE6AE008}
+		{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F} = {E38DF084-32DA-43CE-A1B0-707ADE6AE008}
+	EndGlobalSection
+EndGlobal
