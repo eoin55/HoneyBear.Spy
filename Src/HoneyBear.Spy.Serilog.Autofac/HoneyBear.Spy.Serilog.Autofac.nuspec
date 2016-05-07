@@ -19,6 +19,5 @@
     </metadata>
     <files>
         <file src="bin\Release\HoneyBear.Spy.Serilog.Autofac.dll" target="lib\net452\HoneyBear.Spy.Serilog.Autofac.dll" />
-        <file src="bin\Release\HoneyBear.Spy.Serilog.Autofac.xml" target="lib\net452\HoneyBear.Spy.Serilog.Autofac.xml" />
     </files>
 </package>

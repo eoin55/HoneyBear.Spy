@@ -18,6 +18,5 @@
     </metadata>
     <files>
         <file src="bin\Release\HoneyBear.Spy.Serilog.dll" target="lib\net452\HoneyBear.Spy.Serilog.dll" />
-        <file src="bin\Release\HoneyBear.Spy.Serilog.xml" target="lib\net452\HoneyBear.Spy.Serilog.xml" />
     </files>
 </package>
