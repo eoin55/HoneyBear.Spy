@@ -5,8 +5,7 @@ namespace HoneyBear.Spy.Sample.Host.WindowsService
 {
     internal class Program
     {
-        private static void Main()
-        {
+        private static void Main() =>
             HostFactory
                 .Run(
                     config =>
@@ -22,6 +21,5 @@ namespace HoneyBear.Spy.Sample.Host.WindowsService
                                     s.WhenStopped(h => h.Stop());
                                 });
                     });
-        }
     }
 }

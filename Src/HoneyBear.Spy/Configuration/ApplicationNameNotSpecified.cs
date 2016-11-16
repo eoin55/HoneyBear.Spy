@@ -1,8 +1,8 @@
 using System;
 
-namespace HoneyBear.Spy.Serilog.Configuration
+namespace HoneyBear.Spy.Configuration
 {
-    internal class ApplicationNameNotSpecified : Exception
+    public sealed class ApplicationNameNotSpecified : Exception
     {
         private static string ExceptionMessage =>
             @"

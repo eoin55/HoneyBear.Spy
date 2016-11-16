@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy", "HoneyBear.Spy\HoneyBear.Spy.csproj", "{C0BEEC0E-C647-4F93-8E6D-8A55FB5860A8}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Sample.Host.WindowsService", "HoneyBear.Spy.Sample.Host.WindowsService\HoneyBear.Spy.Sample.Host.WindowsService.csproj", "{C3CFF503-F4DA-4116-B1A8-1D3137AEB96F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.Sample.Host.Web", "HoneyBear.Spy.Sample.Host.Web\HoneyBear.Spy.Sample.Host.Web.csproj", "{FB1DAC64-0DD0-487F-8A62-19F1ACE18C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.NLog", "HoneyBear.Spy.NLog\HoneyBear.Spy.NLog.csproj", "{383DD717-FFB6-472E-B3AA-1FAC1097649A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoneyBear.Spy.NLog.Autofac", "HoneyBear.Spy.NLog.Autofac\HoneyBear.Spy.NLog.Autofac.csproj", "{9FD48BA9-B2FB-46ED-AEBF-3021A4DD921A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{FB1DAC64-0DD0-487F-8A62-19F1ACE18C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1DAC64-0DD0-487F-8A62-19F1ACE18C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1DAC64-0DD0-487F-8A62-19F1ACE18C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383DD717-FFB6-472E-B3AA-1FAC1097649A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383DD717-FFB6-472E-B3AA-1FAC1097649A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383DD717-FFB6-472E-B3AA-1FAC1097649A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383DD717-FFB6-472E-B3AA-1FAC1097649A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD48BA9-B2FB-46ED-AEBF-3021A4DD921A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD48BA9-B2FB-46ED-AEBF-3021A4DD921A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD48BA9-B2FB-46ED-AEBF-3021A4DD921A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD48BA9-B2FB-46ED-AEBF-3021A4DD921A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

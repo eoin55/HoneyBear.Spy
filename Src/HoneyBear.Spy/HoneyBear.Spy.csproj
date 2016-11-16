@@ -34,6 +34,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\ApplicationNameNotSpecified.cs" />
     <Compile Include="Configuration\Environment.cs" />
     <Compile Include="Configuration\ISpyBuilder.cs" />
     <Compile Include="Configuration\ISpyFileLocation.cs" />

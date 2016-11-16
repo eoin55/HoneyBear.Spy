@@ -24,7 +24,7 @@ namespace HoneyBear.Spy.Serilog
         private const LogEventLevel DefaultLogLevel = LogEventLevel.Information;
         private const string DefaultFilePath = @"C:\Logs";
         private const string Template =
-            "{Timestamp:HH:mm:ss.fffzzz}\t[{Level}]\t{MachineName}\t[{ProcessId}]\t[{ThreadId}]\t[{ClassName}]\t[{MethodName}]\t{Message}{NewLine}{Exception}";
+            "{Timestamp:HH:mm:ss.fffzzz}\t[{Level}]\t[{MachineName}]\t[{ProcessId}]\t[{ThreadId}]\t[{ClassName}]\t[{MethodName}]\t[{Message}]{NewLine}{Exception}";
 
         public SpyBuilder()
         {

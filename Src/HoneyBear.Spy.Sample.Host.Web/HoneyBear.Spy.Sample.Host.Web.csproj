@@ -101,6 +101,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HoneyBear.Spy.NLog.Autofac\HoneyBear.Spy.NLog.Autofac.csproj">
+      <Project>{9fd48ba9-b2fb-46ed-aebf-3021a4dd921a}</Project>
+      <Name>HoneyBear.Spy.NLog.Autofac</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HoneyBear.Spy.NLog\HoneyBear.Spy.NLog.csproj">
+      <Project>{383dd717-ffb6-472e-b3aa-1fac1097649a}</Project>
+      <Name>HoneyBear.Spy.NLog</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HoneyBear.Spy.Sample.Library\HoneyBear.Spy.Sample.Library.csproj">
       <Project>{9f1dfe5c-e983-40c0-b820-91bf40f8abf7}</Project>
       <Name>HoneyBear.Spy.Sample.Library</Name>

@@ -24,53 +24,33 @@ namespace HoneyBear.Spy.Serilog
         public bool IsWarnEnabled => _logger.IsEnabled(LogEventLevel.Warning);
 
         public void Debug(string format, params object[] args)
-        {
-            _logger.Debug(format, args);
-        }
+            => _logger.Debug(format, args);
 
         public void Debug(Exception exception, string format, params object[] args)
-        {
-            _logger.Debug(exception, format, args);
-        }
+            => _logger.Debug(exception, format, args);
 
         public void Error(string format, params object[] args)
-        {
-            _logger.Error(format, args);
-        }
+            => _logger.Error(format, args);
 
         public void Error(Exception exception, string format, params object[] args)
-        {
-            _logger.Error(exception, format, args);
-        }
+            => _logger.Error(exception, format, args);
 
         public void Fatal(string format, params object[] args)
-        {
-            _logger.Fatal(format, args);
-        }
+            => _logger.Fatal(format, args);
 
         public void Fatal(Exception exception, string format, params object[] args)
-        {
-            _logger.Fatal(exception, format, args);
-        }
+            => _logger.Fatal(exception, format, args);
 
         public void Info(string format, params object[] args)
-        {
-            _logger.Information(format, args);
-        }
+            => _logger.Information(format, args);
 
         public void Info(Exception exception, string format, params object[] args)
-        {
-            _logger.Information(exception, format, args);
-        }
+            => _logger.Information(exception, format, args);
 
         public void Warn(string format, params object[] args)
-        {
-            _logger.Warning(format, args);
-        }
+            => _logger.Warning(format, args);
 
         public void Warn(Exception exception, string format, params object[] args)
-        {
-            _logger.Warning(exception, format, args);
-        }
+            => _logger.Warning(exception, format, args);
     }
 }
